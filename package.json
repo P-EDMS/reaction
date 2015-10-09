@@ -16,7 +16,7 @@
     "webpack-dev-server": "^1.12.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --hot --inline",
+    "start": "webpack-dev-server --content-base ./ --hot --inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

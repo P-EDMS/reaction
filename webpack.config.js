@@ -1,13 +1,16 @@
+path = require('path');
+
 module.exports = {
-    context: __dirname + '/app',
+    context: path.resolve(__dirname,'app'),
     entry: {
-        javascript: "./app.js",
+        javascript: [ 'webpack/hot/dev-server', "./app.js"],
         html: './index.html'
     },
 
     output: {
         filename: "app.js",
-        path: __dirname + "/dist"
+        path: path.resolve(__dirname,'dist'),
+        publicPath: '/dist/'
     },
     module: {
         loaders: [
