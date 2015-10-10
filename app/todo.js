@@ -1,12 +1,12 @@
 import React, {Component, PropTypes} from "react";
 
-
 export default class Todo extends Component {
-
     render() {
+        let css = {textDecoration: this.props.completed? 'line-through': 'none'};
         return (
-            <div> {this.props.text} </div>
-
+            <li style={css} onClick={this.props.onClick}>
+                {this.props.text}
+            </li>
         );
     };
 };

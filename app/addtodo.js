@@ -4,18 +4,6 @@ import ReactDOM from "react-dom";
 export default class AddTodo extends Component {
 
     render() {
-
-        var param = {
-            'input': 'a'
-        };
-var colors = JSON.parse('{"color":"white"}').color;
-        console.log(colors);
-
-        var arr = [];
-
-
-
-
         this.refs = {};
         return (
             <div>
